@@ -1,0 +1,26 @@
+{
+    "name": "Tab Organizer",
+    "version": "1.0",
+    "description": "Tab Organizer will list all your open tabs so you can copy them. More features coming soon ",
+    "permissions": ["activeTab","declarativeContent", "storage","tabs"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title":"Tab Organizer"
+    },
+    "options_page": "options.html",
+  
+    "icons": {
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png",
+      "256": "icons/256.png"
+    },
+    "manifest_version": 2
+  }
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         *{
+         color:#eee;
+         }
+         body{
+         background:#333;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         padding:5px;
+         width:550px;
+         height:350px;
+         }
+         #header{
+         padding:5px;
+         }
+         #heading{
+         float:left;
+         color:#4CAF50;
+         margin : 10px 5px;
+         }
+         #actionbar{
+         float:right;
+         }
+         #maincontainer{
+         border : 1px #888 solid;
+         margin: 5px 0px;
+         overflow:hidden;
+         }
+        
+        
+        .listitem_title {
+         color:#4CAF50;
+         font-weight: bold;    
+         }    
+
+         .listitem_title:hover {
+          background:#333;
+         }
+
+
+         .urllist{
+         list-style-position: inside;
+         padding-left: 0;
+         margin-bottom: 5px;
+         }
+         .listitem_url{
+         color:#eee;
+         font-weight: 300;
+         list-style-type: none;
+         }
+         button {
+            border: none; /* Remove borders */
+            color: black; /* Add a text color */
+            padding: 14px 28px; /* Add some padding */
+            cursor: pointer; /* Add a pointer cursor on mouse-over */
+            background-color: #4CAF50;
+              } /* Green */
+
+          button:hover {background-color: #46a049;}
+
+          #footer{
+            float:right;
+          }
+      </style>
+   </head>
+   <body>
+      <div id="header">
+         <h2 id="heading"> Tabs Organizer</h2>
+         <img src="/icons/32.png"/>   
+         
+         <div id="actionbar">
+            <button>Copy</button>
+            <button>Save</button>
+            <button>Open</button>
+         </div>
+      </div>
+      <div id="maincontainer">
+         <ol id="tablist"> </ol>
+      </div>
+      <div id="footer">
+         <p>Share feedback @ <a href="mailto:er.abhishekdwevedi@gmail.com?Subject="Tab%20Organizer%20Feedback" target="_top">er.abhishekdwevedi@gmail.com</a></p>
+      </div>
+      <script src="tablist.js"></script>
+   </body>
+</html>
